@@ -1,0 +1,869 @@
+<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="2/9/2024 3:55:10 AM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="DESKTOP-5GOSRTG"
+  DTS:CreatorName="DESKTOP-5GOSRTG\ACER"
+  DTS:DTSID="{A8F2025A-DB32-4B07-A800-D956FAE0D8E8}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="16.0.5270.0"
+  DTS:LocaleID="10252"
+  DTS:ObjectName="Package1"
+  DTS:PackageType="5"
+  DTS:VersionBuild="2"
+  DTS:VersionGUID="{FAF5D6B5-65AB-4E0B-A0A3-15BD06997579}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Gestionnaire de connexions Excel]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{668ED5E8-CE22-49FA-BC4E-F9A053D42022}"
+      DTS:ObjectName="Gestionnaire de connexions Excel">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="0"
+          DTS:ConnectRetryInterval="0"
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\ACER\OneDrive\Bureau\donne.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Gestionnaire de connexions Excel 1]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{98EB6DB3-0501-4E3C-B07D-E8871F7F8EE6}"
+      DTS:ObjectName="Gestionnaire de connexions Excel 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="0"
+          DTS:ConnectRetryInterval="0"
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\ACER\OneDrive\Bureau\donne.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Gestionnaire de connexions Excel 2]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{3E27B1FD-CF37-43A5-B03E-96293AD17787}"
+      DTS:ObjectName="Gestionnaire de connexions Excel 2">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="0"
+          DTS:ConnectRetryInterval="0"
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\ACER\OneDrive\Bureau\donne.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Gestionnaire de connexions Excel 3]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{E814003A-C1F2-4DB8-BAC6-0D6834A2370D}"
+      DTS:ObjectName="Gestionnaire de connexions Excel 3">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="0"
+          DTS:ConnectRetryInterval="0"
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\ACER\Downloads\test-BI.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Gestionnaire de connexions Excel 4]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{25D2C621-B0C9-44DB-8DED-4EC519F5A82D}"
+      DTS:ObjectName="Gestionnaire de connexions Excel 4">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="0"
+          DTS:ConnectRetryInterval="0"
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\ACER\Downloads\donne.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Gestionnaire de connexions Excel 5]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{8F0637B0-F023-471F-9398-EDDB4F9D756F}"
+      DTS:ObjectName="Gestionnaire de connexions Excel 5">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="0"
+          DTS:ConnectRetryInterval="0"
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\ACER\Downloads\Nouveau dossier (2)\donnees.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\excel"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Tâche de flux de données"
+      DTS:DTSID="{9B6B2ECF-C543-431B-8030-8C43793CEB61}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="excel"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\excel\Destination Excel"
+              componentClassID="Microsoft.ExcelDestination"
+              contactInfo="Destination Excel;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Tous droits réservés; http://www.microsoft.com/sql/support;0"
+              description="Destination Excel"
+              name="Destination Excel"
+              usesDispositions="true">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="Nombre de secondes avant l'expiration d'une commande.  Une valeur égale à 0 indique un délai d'expiration infini."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Spécifie le nom de l'objet de base de données utilisé pour ouvrir un ensemble de lignes."
+                  name="OpenRowset">donnees</property>
+                <property
+                  dataType="System.String"
+                  description="Spécifie la variable contenant le nom de l'objet de base de données utilisé pour ouvrir un ensemble de lignes."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="Commande SQL à exécuter."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Spécifie le mode utilisé pour accéder à la base de données."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indique si les valeurs fournies pour les colonnes d'identité seront copiées à la destination. Si la valeur est définie à False, les valeurs des colonnes d'identité seront générées automatiquement à la destination. Ne s'applique que si le chargement rapide est activé."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indique si les colonnes contenant la valeur NULL auront cette valeur NULL copiée à la destination. Si la valeur est définie à False, les colonnes contenant la valeur NULL auront leurs valeurs par défaut insérées à la destination. Ne s'applique que si le chargement rapide est activé."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Spécifie les options à utiliser avec le chargement rapide.  Ne s'applique que si le chargement rapide est activé."
+                  name="FastLoadOptions"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Spécifie quand les validations sont émises pendant l'insertion des données.  Une valeur égale à 0 spécifie qu'une validation sera émise à la fin de l'insertion des données.  Ne s'applique que si le chargement rapide est activé."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\excel\Destination Excel.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[Gestionnaire de connexions Excel 5]"
+                  connectionManagerRefId="Package.ConnectionManagers[Gestionnaire de connexions Excel 5]"
+                  description="Connexion OLE DB en cours d'exécution utilisée pour accéder à la base de données."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\excel\Destination Excel.Inputs[Entrée de destination Excel]"
+                  errorOrTruncationOperation="Insérer"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="Entrée de destination Excel">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\excel\Destination Excel.Inputs[Entrée de destination Excel].Columns[Code commune]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Code commune"
+                      externalMetadataColumnId="Package\excel\Destination Excel.Inputs[Entrée de destination Excel].ExternalColumns[Code commune]"
+                      lineageId="Package\excel\Source OLE DB.Outputs[Sortie de source OLE DB].Columns[Code commune]" />
+                    <inputColumn
+                      refId="Package\excel\Destination Excel.Inputs[Entrée de destination Excel].Columns[Nom de la commune]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Nom de la commune"
+                      externalMetadataColumnId="Package\excel\Destination Excel.Inputs[Entrée de destination Excel].ExternalColumns[Nom de la commune]"
+                      lineageId="Package\excel\Source OLE DB.Outputs[Sortie de source OLE DB].Columns[Nom de la commune]" />
+                    <inputColumn
+                      refId="Package\excel\Destination Excel.Inputs[Entrée de destination Excel].Columns[Type d'appartenance]"
+                      cachedDataType="r8"
+                      cachedName="Type d'appartenance"
+                      externalMetadataColumnId="Package\excel\Destination Excel.Inputs[Entrée de destination Excel].ExternalColumns[Type d'appartenance]"
+                      lineageId="Package\excel\Source OLE DB.Outputs[Sortie de source OLE DB].Columns[Type d'appartenance]" />
+                    <inputColumn
+                      refId="Package\excel\Destination Excel.Inputs[Entrée de destination Excel].Columns[Nom du département]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Nom du département"
+                      externalMetadataColumnId="Package\excel\Destination Excel.Inputs[Entrée de destination Excel].ExternalColumns[Nom du département]"
+                      lineageId="Package\excel\Source OLE DB.Outputs[Sortie de source OLE DB].Columns[Nom du département]" />
+                    <inputColumn
+                      refId="Package\excel\Destination Excel.Inputs[Entrée de destination Excel].Columns[Code Département]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Code Département"
+                      externalMetadataColumnId="Package\excel\Destination Excel.Inputs[Entrée de destination Excel].ExternalColumns[Code Département]"
+                      lineageId="Package\excel\Source OLE DB.Outputs[Sortie de source OLE DB].Columns[Code Département]" />
+                    <inputColumn
+                      refId="Package\excel\Destination Excel.Inputs[Entrée de destination Excel].Columns[Date]"
+                      cachedDataType="dbDate"
+                      cachedName="Date"
+                      externalMetadataColumnId="Package\excel\Destination Excel.Inputs[Entrée de destination Excel].ExternalColumns[Date]"
+                      lineageId="Package\excel\Source OLE DB.Outputs[Sortie de source OLE DB].Columns[Date]" />
+                    <inputColumn
+                      refId="Package\excel\Destination Excel.Inputs[Entrée de destination Excel].Columns[Quantités vendues]"
+                      cachedDataType="r8"
+                      cachedName="Quantités vendues"
+                      externalMetadataColumnId="Package\excel\Destination Excel.Inputs[Entrée de destination Excel].ExternalColumns[Quantités vendues]"
+                      lineageId="Package\excel\Source OLE DB.Outputs[Sortie de source OLE DB].Columns[Quantités vendues]" />
+                    <inputColumn
+                      refId="Package\excel\Destination Excel.Inputs[Entrée de destination Excel].Columns[Dynamique]"
+                      cachedDataType="wstr"
+                      cachedLength="30"
+                      cachedName="Dynamique"
+                      externalMetadataColumnId="Package\excel\Destination Excel.Inputs[Entrée de destination Excel].ExternalColumns[Dynamique]"
+                      lineageId="Package\excel\Source OLE DB.Outputs[Sortie de source OLE DB].Columns[Dynamique]" />
+                    <inputColumn
+                      refId="Package\excel\Destination Excel.Inputs[Entrée de destination Excel].Columns[Rebus]"
+                      cachedDataType="wstr"
+                      cachedLength="30"
+                      cachedName="Rebus"
+                      externalMetadataColumnId="Package\excel\Destination Excel.Inputs[Entrée de destination Excel].ExternalColumns[Rebus]"
+                      lineageId="Package\excel\Source OLE DB.Outputs[Sortie de source OLE DB].Columns[Rebus]" />
+                    <inputColumn
+                      refId="Package\excel\Destination Excel.Inputs[Entrée de destination Excel].Columns[Ecrêtement]"
+                      cachedDataType="wstr"
+                      cachedLength="30"
+                      cachedName="Ecrêtement"
+                      externalMetadataColumnId="Package\excel\Destination Excel.Inputs[Entrée de destination Excel].ExternalColumns[Ecrêtement]"
+                      lineageId="Package\excel\Source OLE DB.Outputs[Sortie de source OLE DB].Columns[Ecrêtement]" />
+                    <inputColumn
+                      refId="Package\excel\Destination Excel.Inputs[Entrée de destination Excel].Columns[En stock]"
+                      cachedDataType="r8"
+                      cachedName="En stock"
+                      externalMetadataColumnId="Package\excel\Destination Excel.Inputs[Entrée de destination Excel].ExternalColumns[En stock]"
+                      lineageId="Package\excel\Source OLE DB.Outputs[Sortie de source OLE DB].Columns[En stock]" />
+                    <inputColumn
+                      refId="Package\excel\Destination Excel.Inputs[Entrée de destination Excel].Columns[Invendus]"
+                      cachedDataType="r8"
+                      cachedName="Invendus"
+                      externalMetadataColumnId="Package\excel\Destination Excel.Inputs[Entrée de destination Excel].ExternalColumns[Invendus]"
+                      lineageId="Package\excel\Source OLE DB.Outputs[Sortie de source OLE DB].Columns[Invendus]" />
+                    <inputColumn
+                      refId="Package\excel\Destination Excel.Inputs[Entrée de destination Excel].Columns[Pannes]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Pannes"
+                      externalMetadataColumnId="Package\excel\Destination Excel.Inputs[Entrée de destination Excel].ExternalColumns[Pannes]"
+                      lineageId="Package\excel\Source OLE DB.Outputs[Sortie de source OLE DB].Columns[Pannes]" />
+                    <inputColumn
+                      refId="Package\excel\Destination Excel.Inputs[Entrée de destination Excel].Columns[Exportées]"
+                      cachedDataType="r8"
+                      cachedName="Exportées"
+                      externalMetadataColumnId="Package\excel\Destination Excel.Inputs[Entrée de destination Excel].ExternalColumns[Exportées]"
+                      lineageId="Package\excel\Source OLE DB.Outputs[Sortie de source OLE DB].Columns[Exportées]" />
+                    <inputColumn
+                      refId="Package\excel\Destination Excel.Inputs[Entrée de destination Excel].Columns[Importées]"
+                      cachedDataType="wstr"
+                      cachedLength="255"
+                      cachedName="Importées"
+                      externalMetadataColumnId="Package\excel\Destination Excel.Inputs[Entrée de destination Excel].ExternalColumns[Importées]"
+                      lineageId="Package\excel\Source OLE DB.Outputs[Sortie de source OLE DB].Columns[Importées]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\excel\Destination Excel.Inputs[Entrée de destination Excel].ExternalColumns[Code commune]"
+                      dataType="wstr"
+                      length="255"
+                      name="Code commune" />
+                    <externalMetadataColumn
+                      refId="Package\excel\Destination Excel.Inputs[Entrée de destination Excel].ExternalColumns[Nom de la commune]"
+                      dataType="wstr"
+                      length="255"
+                      name="Nom de la commune" />
+                    <externalMetadataColumn
+                      refId="Package\excel\Destination Excel.Inputs[Entrée de destination Excel].ExternalColumns[Type d'appartenance]"
+                      dataType="wstr"
+                      length="255"
+                      name="Type d'appartenance" />
+                    <externalMetadataColumn
+                      refId="Package\excel\Destination Excel.Inputs[Entrée de destination Excel].ExternalColumns[Nom du département]"
+                      dataType="wstr"
+                      length="255"
+                      name="Nom du département" />
+                    <externalMetadataColumn
+                      refId="Package\excel\Destination Excel.Inputs[Entrée de destination Excel].ExternalColumns[Code Département]"
+                      dataType="wstr"
+                      length="255"
+                      name="Code Département" />
+                    <externalMetadataColumn
+                      refId="Package\excel\Destination Excel.Inputs[Entrée de destination Excel].ExternalColumns[Date]"
+                      dataType="wstr"
+                      length="255"
+                      name="Date" />
+                    <externalMetadataColumn
+                      refId="Package\excel\Destination Excel.Inputs[Entrée de destination Excel].ExternalColumns[Quantités vendues]"
+                      dataType="wstr"
+                      length="255"
+                      name="Quantités vendues" />
+                    <externalMetadataColumn
+                      refId="Package\excel\Destination Excel.Inputs[Entrée de destination Excel].ExternalColumns[Dynamique]"
+                      dataType="wstr"
+                      length="255"
+                      name="Dynamique" />
+                    <externalMetadataColumn
+                      refId="Package\excel\Destination Excel.Inputs[Entrée de destination Excel].ExternalColumns[Rebus]"
+                      dataType="wstr"
+                      length="255"
+                      name="Rebus" />
+                    <externalMetadataColumn
+                      refId="Package\excel\Destination Excel.Inputs[Entrée de destination Excel].ExternalColumns[Ecrêtement]"
+                      dataType="wstr"
+                      length="255"
+                      name="Ecrêtement" />
+                    <externalMetadataColumn
+                      refId="Package\excel\Destination Excel.Inputs[Entrée de destination Excel].ExternalColumns[En stock]"
+                      dataType="wstr"
+                      length="255"
+                      name="En stock" />
+                    <externalMetadataColumn
+                      refId="Package\excel\Destination Excel.Inputs[Entrée de destination Excel].ExternalColumns[Invendus]"
+                      dataType="wstr"
+                      length="255"
+                      name="Invendus" />
+                    <externalMetadataColumn
+                      refId="Package\excel\Destination Excel.Inputs[Entrée de destination Excel].ExternalColumns[Pannes]"
+                      dataType="wstr"
+                      length="255"
+                      name="Pannes" />
+                    <externalMetadataColumn
+                      refId="Package\excel\Destination Excel.Inputs[Entrée de destination Excel].ExternalColumns[Exportées]"
+                      dataType="wstr"
+                      length="255"
+                      name="Exportées" />
+                    <externalMetadataColumn
+                      refId="Package\excel\Destination Excel.Inputs[Entrée de destination Excel].ExternalColumns[Importées]"
+                      dataType="wstr"
+                      length="255"
+                      name="Importées" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\excel\Destination Excel.Outputs[Sortie d'erreur de destination Excel]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Sortie d'erreur de destination Excel"
+                  synchronousInputId="Package\excel\Destination Excel.Inputs[Entrée de destination Excel]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\excel\Destination Excel.Outputs[Sortie d'erreur de destination Excel].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\excel\Destination Excel.Outputs[Sortie d'erreur de destination Excel].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\excel\Destination Excel.Outputs[Sortie d'erreur de destination Excel].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\excel\Destination Excel.Outputs[Sortie d'erreur de destination Excel].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\excel\Source OLE DB"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="Source OLE DB;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; Tous droits réservés; http://www.microsoft.com/sql/support;7"
+              description="Source OLE DB"
+              name="Source OLE DB"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="Nombre de secondes avant l'expiration d'une commande.  Une valeur égale à 0 indique un délai d'expiration infini."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Spécifie le nom de l'objet de base de données utilisé pour ouvrir un ensemble de lignes."
+                  name="OpenRowset">[dbo].[donnees]</property>
+                <property
+                  dataType="System.String"
+                  description="Spécifie la variable contenant le nom de l'objet de base de données utilisé pour ouvrir un ensemble de lignes."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="Commande SQL à exécuter."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.String"
+                  description="Variable contenant la commande SQL à exécuter."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Spécifie la page de codes de la colonne à utiliser lorsque les informations de page de codes ne sont pas disponibles à partir de la source de données."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Force l'utilisation de la valeur de propriété DefaultCodePage lors de la description des données caractères."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Spécifie le mode utilisé pour accéder à la base de données."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.String"
+                  description="Mappages entre les paramètres de la commande SQL et les variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\excel\Source OLE DB.Connections[OleDbConnection]"
+                  connectionManagerID="{3392C4D8-C90F-49D2-95E6-42C484018158}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[DESKTOP-5GOSRTG.Test_BI]"
+                  description="Connexion OLE DB en cours d'exécution utilisée pour accéder à la base de données."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\excel\Source OLE DB.Outputs[Sortie de source OLE DB]"
+                  name="Sortie de source OLE DB">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\excel\Source OLE DB.Outputs[Sortie de source OLE DB].Columns[Code commune]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\excel\Source OLE DB.Outputs[Sortie de source OLE DB].ExternalColumns[Code commune]"
+                      length="255"
+                      lineageId="Package\excel\Source OLE DB.Outputs[Sortie de source OLE DB].Columns[Code commune]"
+                      name="Code commune"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\excel\Source OLE DB.Outputs[Sortie de source OLE DB].Columns[Nom de la commune]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\excel\Source OLE DB.Outputs[Sortie de source OLE DB].ExternalColumns[Nom de la commune]"
+                      length="255"
+                      lineageId="Package\excel\Source OLE DB.Outputs[Sortie de source OLE DB].Columns[Nom de la commune]"
+                      name="Nom de la commune"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\excel\Source OLE DB.Outputs[Sortie de source OLE DB].Columns[Type d'appartenance]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\excel\Source OLE DB.Outputs[Sortie de source OLE DB].ExternalColumns[Type d'appartenance]"
+                      lineageId="Package\excel\Source OLE DB.Outputs[Sortie de source OLE DB].Columns[Type d'appartenance]"
+                      name="Type d'appartenance"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\excel\Source OLE DB.Outputs[Sortie de source OLE DB].Columns[Nom du département]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\excel\Source OLE DB.Outputs[Sortie de source OLE DB].ExternalColumns[Nom du département]"
+                      length="255"
+                      lineageId="Package\excel\Source OLE DB.Outputs[Sortie de source OLE DB].Columns[Nom du département]"
+                      name="Nom du département"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\excel\Source OLE DB.Outputs[Sortie de source OLE DB].Columns[Code Département]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\excel\Source OLE DB.Outputs[Sortie de source OLE DB].ExternalColumns[Code Département]"
+                      length="255"
+                      lineageId="Package\excel\Source OLE DB.Outputs[Sortie de source OLE DB].Columns[Code Département]"
+                      name="Code Département"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\excel\Source OLE DB.Outputs[Sortie de source OLE DB].Columns[Date]"
+                      dataType="dbDate"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\excel\Source OLE DB.Outputs[Sortie de source OLE DB].ExternalColumns[Date]"
+                      lineageId="Package\excel\Source OLE DB.Outputs[Sortie de source OLE DB].Columns[Date]"
+                      name="Date"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\excel\Source OLE DB.Outputs[Sortie de source OLE DB].Columns[Quantités vendues]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\excel\Source OLE DB.Outputs[Sortie de source OLE DB].ExternalColumns[Quantités vendues]"
+                      lineageId="Package\excel\Source OLE DB.Outputs[Sortie de source OLE DB].Columns[Quantités vendues]"
+                      name="Quantités vendues"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\excel\Source OLE DB.Outputs[Sortie de source OLE DB].Columns[Dynamique]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\excel\Source OLE DB.Outputs[Sortie de source OLE DB].ExternalColumns[Dynamique]"
+                      length="30"
+                      lineageId="Package\excel\Source OLE DB.Outputs[Sortie de source OLE DB].Columns[Dynamique]"
+                      name="Dynamique"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\excel\Source OLE DB.Outputs[Sortie de source OLE DB].Columns[Rebus]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\excel\Source OLE DB.Outputs[Sortie de source OLE DB].ExternalColumns[Rebus]"
+                      length="30"
+                      lineageId="Package\excel\Source OLE DB.Outputs[Sortie de source OLE DB].Columns[Rebus]"
+                      name="Rebus"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\excel\Source OLE DB.Outputs[Sortie de source OLE DB].Columns[Ecrêtement]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\excel\Source OLE DB.Outputs[Sortie de source OLE DB].ExternalColumns[Ecrêtement]"
+                      length="30"
+                      lineageId="Package\excel\Source OLE DB.Outputs[Sortie de source OLE DB].Columns[Ecrêtement]"
+                      name="Ecrêtement"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\excel\Source OLE DB.Outputs[Sortie de source OLE DB].Columns[En stock]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\excel\Source OLE DB.Outputs[Sortie de source OLE DB].ExternalColumns[En stock]"
+                      lineageId="Package\excel\Source OLE DB.Outputs[Sortie de source OLE DB].Columns[En stock]"
+                      name="En stock"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\excel\Source OLE DB.Outputs[Sortie de source OLE DB].Columns[Invendus]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\excel\Source OLE DB.Outputs[Sortie de source OLE DB].ExternalColumns[Invendus]"
+                      lineageId="Package\excel\Source OLE DB.Outputs[Sortie de source OLE DB].Columns[Invendus]"
+                      name="Invendus"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\excel\Source OLE DB.Outputs[Sortie de source OLE DB].Columns[Pannes]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\excel\Source OLE DB.Outputs[Sortie de source OLE DB].ExternalColumns[Pannes]"
+                      length="255"
+                      lineageId="Package\excel\Source OLE DB.Outputs[Sortie de source OLE DB].Columns[Pannes]"
+                      name="Pannes"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\excel\Source OLE DB.Outputs[Sortie de source OLE DB].Columns[Exportées]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\excel\Source OLE DB.Outputs[Sortie de source OLE DB].ExternalColumns[Exportées]"
+                      lineageId="Package\excel\Source OLE DB.Outputs[Sortie de source OLE DB].Columns[Exportées]"
+                      name="Exportées"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\excel\Source OLE DB.Outputs[Sortie de source OLE DB].Columns[Importées]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\excel\Source OLE DB.Outputs[Sortie de source OLE DB].ExternalColumns[Importées]"
+                      length="255"
+                      lineageId="Package\excel\Source OLE DB.Outputs[Sortie de source OLE DB].Columns[Importées]"
+                      name="Importées"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\excel\Source OLE DB.Outputs[Sortie de source OLE DB].ExternalColumns[Code commune]"
+                      dataType="wstr"
+                      length="255"
+                      name="Code commune" />
+                    <externalMetadataColumn
+                      refId="Package\excel\Source OLE DB.Outputs[Sortie de source OLE DB].ExternalColumns[Nom de la commune]"
+                      dataType="wstr"
+                      length="255"
+                      name="Nom de la commune" />
+                    <externalMetadataColumn
+                      refId="Package\excel\Source OLE DB.Outputs[Sortie de source OLE DB].ExternalColumns[Type d'appartenance]"
+                      dataType="r8"
+                      name="Type d'appartenance" />
+                    <externalMetadataColumn
+                      refId="Package\excel\Source OLE DB.Outputs[Sortie de source OLE DB].ExternalColumns[Nom du département]"
+                      dataType="wstr"
+                      length="255"
+                      name="Nom du département" />
+                    <externalMetadataColumn
+                      refId="Package\excel\Source OLE DB.Outputs[Sortie de source OLE DB].ExternalColumns[Code Département]"
+                      dataType="wstr"
+                      length="255"
+                      name="Code Département" />
+                    <externalMetadataColumn
+                      refId="Package\excel\Source OLE DB.Outputs[Sortie de source OLE DB].ExternalColumns[Date]"
+                      dataType="dbDate"
+                      name="Date" />
+                    <externalMetadataColumn
+                      refId="Package\excel\Source OLE DB.Outputs[Sortie de source OLE DB].ExternalColumns[Quantités vendues]"
+                      dataType="r8"
+                      name="Quantités vendues" />
+                    <externalMetadataColumn
+                      refId="Package\excel\Source OLE DB.Outputs[Sortie de source OLE DB].ExternalColumns[Dynamique]"
+                      dataType="wstr"
+                      length="30"
+                      name="Dynamique" />
+                    <externalMetadataColumn
+                      refId="Package\excel\Source OLE DB.Outputs[Sortie de source OLE DB].ExternalColumns[Rebus]"
+                      dataType="wstr"
+                      length="30"
+                      name="Rebus" />
+                    <externalMetadataColumn
+                      refId="Package\excel\Source OLE DB.Outputs[Sortie de source OLE DB].ExternalColumns[Ecrêtement]"
+                      dataType="wstr"
+                      length="30"
+                      name="Ecrêtement" />
+                    <externalMetadataColumn
+                      refId="Package\excel\Source OLE DB.Outputs[Sortie de source OLE DB].ExternalColumns[En stock]"
+                      dataType="r8"
+                      name="En stock" />
+                    <externalMetadataColumn
+                      refId="Package\excel\Source OLE DB.Outputs[Sortie de source OLE DB].ExternalColumns[Invendus]"
+                      dataType="r8"
+                      name="Invendus" />
+                    <externalMetadataColumn
+                      refId="Package\excel\Source OLE DB.Outputs[Sortie de source OLE DB].ExternalColumns[Pannes]"
+                      dataType="wstr"
+                      length="255"
+                      name="Pannes" />
+                    <externalMetadataColumn
+                      refId="Package\excel\Source OLE DB.Outputs[Sortie de source OLE DB].ExternalColumns[Exportées]"
+                      dataType="r8"
+                      name="Exportées" />
+                    <externalMetadataColumn
+                      refId="Package\excel\Source OLE DB.Outputs[Sortie de source OLE DB].ExternalColumns[Importées]"
+                      dataType="wstr"
+                      length="255"
+                      name="Importées" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\excel\Source OLE DB.Outputs[Sortie d'erreur de source OLE DB]"
+                  isErrorOut="true"
+                  name="Sortie d'erreur de source OLE DB">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\excel\Source OLE DB.Outputs[Sortie d'erreur de source OLE DB].Columns[Code commune]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\excel\Source OLE DB.Outputs[Sortie d'erreur de source OLE DB].Columns[Code commune]"
+                      name="Code commune" />
+                    <outputColumn
+                      refId="Package\excel\Source OLE DB.Outputs[Sortie d'erreur de source OLE DB].Columns[Nom de la commune]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\excel\Source OLE DB.Outputs[Sortie d'erreur de source OLE DB].Columns[Nom de la commune]"
+                      name="Nom de la commune" />
+                    <outputColumn
+                      refId="Package\excel\Source OLE DB.Outputs[Sortie d'erreur de source OLE DB].Columns[Type d'appartenance]"
+                      dataType="r8"
+                      lineageId="Package\excel\Source OLE DB.Outputs[Sortie d'erreur de source OLE DB].Columns[Type d'appartenance]"
+                      name="Type d'appartenance" />
+                    <outputColumn
+                      refId="Package\excel\Source OLE DB.Outputs[Sortie d'erreur de source OLE DB].Columns[Nom du département]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\excel\Source OLE DB.Outputs[Sortie d'erreur de source OLE DB].Columns[Nom du département]"
+                      name="Nom du département" />
+                    <outputColumn
+                      refId="Package\excel\Source OLE DB.Outputs[Sortie d'erreur de source OLE DB].Columns[Code Département]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\excel\Source OLE DB.Outputs[Sortie d'erreur de source OLE DB].Columns[Code Département]"
+                      name="Code Département" />
+                    <outputColumn
+                      refId="Package\excel\Source OLE DB.Outputs[Sortie d'erreur de source OLE DB].Columns[Date]"
+                      dataType="dbDate"
+                      lineageId="Package\excel\Source OLE DB.Outputs[Sortie d'erreur de source OLE DB].Columns[Date]"
+                      name="Date" />
+                    <outputColumn
+                      refId="Package\excel\Source OLE DB.Outputs[Sortie d'erreur de source OLE DB].Columns[Quantités vendues]"
+                      dataType="r8"
+                      lineageId="Package\excel\Source OLE DB.Outputs[Sortie d'erreur de source OLE DB].Columns[Quantités vendues]"
+                      name="Quantités vendues" />
+                    <outputColumn
+                      refId="Package\excel\Source OLE DB.Outputs[Sortie d'erreur de source OLE DB].Columns[Dynamique]"
+                      dataType="wstr"
+                      length="30"
+                      lineageId="Package\excel\Source OLE DB.Outputs[Sortie d'erreur de source OLE DB].Columns[Dynamique]"
+                      name="Dynamique" />
+                    <outputColumn
+                      refId="Package\excel\Source OLE DB.Outputs[Sortie d'erreur de source OLE DB].Columns[Rebus]"
+                      dataType="wstr"
+                      length="30"
+                      lineageId="Package\excel\Source OLE DB.Outputs[Sortie d'erreur de source OLE DB].Columns[Rebus]"
+                      name="Rebus" />
+                    <outputColumn
+                      refId="Package\excel\Source OLE DB.Outputs[Sortie d'erreur de source OLE DB].Columns[Ecrêtement]"
+                      dataType="wstr"
+                      length="30"
+                      lineageId="Package\excel\Source OLE DB.Outputs[Sortie d'erreur de source OLE DB].Columns[Ecrêtement]"
+                      name="Ecrêtement" />
+                    <outputColumn
+                      refId="Package\excel\Source OLE DB.Outputs[Sortie d'erreur de source OLE DB].Columns[En stock]"
+                      dataType="r8"
+                      lineageId="Package\excel\Source OLE DB.Outputs[Sortie d'erreur de source OLE DB].Columns[En stock]"
+                      name="En stock" />
+                    <outputColumn
+                      refId="Package\excel\Source OLE DB.Outputs[Sortie d'erreur de source OLE DB].Columns[Invendus]"
+                      dataType="r8"
+                      lineageId="Package\excel\Source OLE DB.Outputs[Sortie d'erreur de source OLE DB].Columns[Invendus]"
+                      name="Invendus" />
+                    <outputColumn
+                      refId="Package\excel\Source OLE DB.Outputs[Sortie d'erreur de source OLE DB].Columns[Pannes]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\excel\Source OLE DB.Outputs[Sortie d'erreur de source OLE DB].Columns[Pannes]"
+                      name="Pannes" />
+                    <outputColumn
+                      refId="Package\excel\Source OLE DB.Outputs[Sortie d'erreur de source OLE DB].Columns[Exportées]"
+                      dataType="r8"
+                      lineageId="Package\excel\Source OLE DB.Outputs[Sortie d'erreur de source OLE DB].Columns[Exportées]"
+                      name="Exportées" />
+                    <outputColumn
+                      refId="Package\excel\Source OLE DB.Outputs[Sortie d'erreur de source OLE DB].Columns[Importées]"
+                      dataType="wstr"
+                      length="255"
+                      lineageId="Package\excel\Source OLE DB.Outputs[Sortie d'erreur de source OLE DB].Columns[Importées]"
+                      name="Importées" />
+                    <outputColumn
+                      refId="Package\excel\Source OLE DB.Outputs[Sortie d'erreur de source OLE DB].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\excel\Source OLE DB.Outputs[Sortie d'erreur de source OLE DB].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\excel\Source OLE DB.Outputs[Sortie d'erreur de source OLE DB].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\excel\Source OLE DB.Outputs[Sortie d'erreur de source OLE DB].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\excel.Paths[Sortie de source OLE DB]"
+              endId="Package\excel\Destination Excel.Inputs[Entrée de destination Excel]"
+              name="Sortie de source OLE DB"
+              startId="Package\excel\Source OLE DB.Outputs[Sortie de source OLE DB]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--Cette section CDATA contient des informations sur la disposition du package. Elle comprend des informations telles que les coordonnées (x,y), la largeur et la hauteur.-->
+<!--Si vous modifiez manuellement cette section et commettez une erreur, vous pouvez la supprimer. -->
+<!--Le package pourra toujours se charger normalement, mais les informations de disposition précédente seront perdues et le concepteur réorganisera automatiquement les éléments sur l'aire de conception.-->
+<Objects
+  Version="8">
+  <!--Chaque nœud ci-dessous contiendra des propriétés qui n'affectent pas le comportement d'exécution.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="104,42.6666666666667"
+          Id="Package\excel"
+          TopLeft="97.4999985471368,35.7499993607402" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\excel">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="150.666666666667,42.6666666666667"
+          Id="Package\excel\Source OLE DB"
+          TopLeft="89.9999986588955,39.6499992910028" />
+        <NodeLayout
+          Size="160,42.6666666666667"
+          Id="Package\excel\Destination Excel"
+          TopLeft="412.499993853271,59.1499989423156" />
+        <EdgeLayout
+          Id="Package\excel.Paths[Sortie de source OLE DB]"
+          TopLeft="240.666665325562,60.9833326243361">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="171.833328527709,19.4999996513128"
+              Start="0,0"
+              End="164.333328527709,19.4999996513128">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="81.9166642638545,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="81.9166642638545,0"
+                    Point2="85.9166642638545,0"
+                    Point3="85.9166642638545,4" />
+                  <mssgle:LineSegment
+                    End="85.9166642638545,15.4999996513128" />
+                  <mssgle:CubicBezierSegment
+                    Point1="85.9166642638545,15.4999996513128"
+                    Point2="85.9166642638545,19.4999996513128"
+                    Point3="89.9166642638545,19.4999996513128" />
+                  <mssgle:LineSegment
+                    End="164.333328527709,19.4999996513128" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\excel\Source OLE DB">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\excel\Destination Excel">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
